@@ -1,7 +1,7 @@
 'use strict';
 
 const {generateTweet} = require('./src/generator');
-// const {postTweet, sendDM} = require('./src/twitter/api)
+// const {postTweet, sendDM} = require('./src/twitter)
 
 generateTweet((error, tweet) => {
   if (error) {

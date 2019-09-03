@@ -1,6 +1,7 @@
 'use strict';
 
 require('prototypes');
+const {runQuery} = require('./sql');
 
 const KEYWORD_PREFIX = '$';
 const KEYWORD_DIVIDER = '-';
@@ -56,4 +57,8 @@ function buildQuery(table, category, callback) {
   );
 }
 
-function getReplacement(query, callback) {}
+function getReplacement(query, callback) {
+    runQuery((error, result) => {
+        return callback(error, result)
+    })
+}
