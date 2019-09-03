@@ -916,7 +916,7 @@ INSERT INTO specials VALUES (null, 'un $per-scholarH $ad-gentilicioH', 'otherlif
 INSERT INTO specials VALUES (null, 'un $per-rulerH $ad-gentilicioH', 'otherlife');
 INSERT INTO specials VALUES (null, 'un $ob-animalH', 'otherlife');
 INSERT INTO specials VALUES (null, 'una $ob-thingM consciente', 'otherlife');
-INSERT INTO specials VALUES (null, 'un $ob-jobH de $ob-stateu', 'otherlife');
+INSERT INTO specials VALUES (null, 'un $ob-jobH en $ob-stateu', 'otherlife');
 
 INSERT INTO specials VALUES (null, 'vive una vida completamente diferente', 'whole');
 INSERT INTO specials VALUES (null, 'vive otra vida', 'whole');
@@ -1159,7 +1159,7 @@ INSERT INTO specials VALUES (null, '$ob-beingHP', 'student');
 INSERT INTO specials VALUES (null, '$ob-animalPH', 'student');
 INSERT INTO specials VALUES (null, '$ob-landformMP', 'student');
 INSERT INTO specials VALUES (null, '$ob-landformHP', 'student');
-INSERT INTO specials VALUES (null, '$ob-beingMP $ad-gen', 'student');
+INSERT INTO specials VALUES (null, '$ob-beingMP $ad-genP', 'student');
 INSERT INTO specials VALUES (null, '$ob-beingHP $ad-genHP', 'student');
 INSERT INTO specials VALUES (null, '$ob-thingP', 'student');
 INSERT INTO specials VALUES (null, '$ob-concept', 'student');
@@ -1576,7 +1576,7 @@ INSERT INTO specials VALUES (null, '$ob-universeHP', 'diversifyTwentysix');
 
 INSERT INTO specials VALUES (null, 'Una $per-granny súbitamente aparece y te da una $ob-universeM', 'dreammm');
 INSERT INTO specials VALUES (null, 'Esta noche, una $per-granny aparecerá y de dará $ob-heartdesi', 'dreammm');
-INSERT INTO specials VALUES (null, 'Una $per-granny toca a tu puerta. Abres y te da en la mano $ob-space', 'dreammm');
+INSERT INTO specials VALUES (null, 'Una $per-granny toca a tu puerta. Abres y pone en tus manos $ob-space', 'dreammm');
 INSERT INTO specials VALUES (null, 'Esta noche soñarás con un $ob-thingH. Adentro del $ob-thingH hay una $ob-thingM. Adentro de la $ob-thingM está $ob-heartdesi', 'dreammm');
 INSERT INTO specials VALUES (null, 'Esta noche soñarás con una $ob-structureH. Adentro de la $ob-structureM hay un $ob-gemH. Adentro del $ob-gemH está $ob-heartdesi', 'dreammm');
 INSERT INTO specials VALUES (null, 'Esta noche soñaras con una $ob-garbagedumpM. Justo antes de despertar, la $ob-garbagedumpM va a $ver-tran', 'dreammm');
@@ -1597,7 +1597,7 @@ INSERT INTO specials VALUES (null, 'es elegido como Gobernador de $ob-stateu', '
 INSERT INTO specials VALUES (null, 'está jugando en una máquina tragamonedas en las Vegas', 'presidente');
 INSERT INTO specials VALUES (null, 'está volando en globo aerostático hacia $ob-locality', 'presidente');
 INSERT INTO specials VALUES (null, 'está internado en un hospital psiquiátrico en $ob-locality', 'presidente');
-INSERT INTO specials VALUES (null, 'es diagnosticado con $ob-ill', 'presidente');
+INSERT INTO specials VALUES (null, 'es diagnosticado con $ob-illtwo', 'presidente');
 
 INSERT INTO specials VALUES (null, 'una tormenta en $ob-locality. Están lloviendo', 'stormrain');
 INSERT INTO specials VALUES (null, 'una torménta eléctrica en $ob-locality. En vez de truenos, caen', 'stormrain');
@@ -1647,7 +1647,9 @@ INSERT INTO specials VALUES (null, 'Si ya saben cómo me pongo ¿Pa qué me invi
 INSERT INTO specials VALUES (null, 'Wey!!! Acapulco wey!', 'saystuff');
 INSERT INTO specials VALUES (null, 'Tengo todo excepto a ti', 'saystuff');
 INSERT INTO specials VALUES (null, 'Imaginemos cosas chingonas', 'saystuff');
-
+INSERT INTO specials VALUES (null, 'ELLA ES CALLAITA!', 'saystuff');
+INSERT INTO specials VALUES (null, 'Baby, la vida es un ciclo', 'saystuff');
+INSERT INTO specials VALUES (null, 'Ya quiero que sea viernes de ahorcar rucas', 'saystuff');
 
 /* ************************************************** VERBS ************************************************ */
 
@@ -4791,9 +4793,12 @@ INSERT INTO objects VALUES (null, 'sidra', 'alco');
 INSERT INTO objects VALUES (null, 'Jägermeister', 'alco');
 INSERT INTO objects VALUES (null, 'pacharán', 'alco');
 INSERT INTO objects VALUES (null, 'cerveza', 'alco');
+INSERT INTO objects VALUES (null, 'cerveza artesanal', 'alco');
 INSERT INTO objects VALUES (null, 'pulque', 'alco');
+INSERT INTO objects VALUES (null, 'pulque casero', 'alco');
 INSERT INTO objects VALUES (null, 'vermú', 'alco');
 INSERT INTO objects VALUES (null, 'calimocho', 'alco');
+INSERT INTO objects VALUES (null, 'whisky', 'alco');
 
 INSERT INTO objects VALUES (null, 'un $ob-bodypartH gigante', 'brainH');
 INSERT INTO objects VALUES (null, 'un $ob-treeH gigante', 'brainH');
