@@ -878,7 +878,7 @@ INSERT INTO specials VALUES (null, 'Existe una secuela oscura de $ob-movieseries
 INSERT INTO specials VALUES (null, 'Un $per-genH cambia de cuerpo con un $ob-beingH', 'wackyten');
 
 INSERT INTO specials VALUES (null, 'Existe un mundo paralelo en el que', 'parallelUniverse');
-INSERT INTO specials VALUES (null, 'En una realidad alterna', 'parallelUniverse');
+INSERT INTO specials VALUES (null, 'En una realidad alterna en la que', 'parallelUniverse');
 INSERT INTO specials VALUES (null, 'Hay un universo paralelo en el que', 'parallelUniverse');
 
 INSERT INTO specials VALUES (null, 'las semanas empiezan en $ob-weekdayNoMon y terminan en Lunes', 'minorDifference');
@@ -895,7 +895,9 @@ INSERT INTO specials VALUES (null, '$ob-war nunca sucedió', 'minorDifference');
 INSERT INTO specials VALUES (null, 'la $ob-landmarkM nunca se construyó', 'minorDifference');
 INSERT INTO specials VALUES (null, 'solamente existe un $ob-structureH', 'minorDifference');
 INSERT INTO specials VALUES (null, '$ob-natTeam ganó $ob-worldEv', 'minorDifference');
-INSERT INTO specials VALUES (null, '$ob-natTeamtwo ganó $ob-worldEvtwo', 'minorDifference');
+INSERT INTO specials VALUES (null, '$ob-natTeamtwo ganó $ob-worldEvtwo $sp-wackyTweak', 'minorDifference');
+
+INSERT INTO specials VALUES (null, 'pero los $ob-dulceP no existen', 'wackyTweak');
 
 INSERT INTO specials VALUES (null, 'tiene un $ob-extinctanimalH de mascota', 'hipsterst');
 INSERT INTO specials VALUES (null, 'tiene un $ob-animalH bicéfalo de mascota', 'hipsterst');
@@ -5042,6 +5044,7 @@ INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Rusia 2018 con un 
 INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Rusia 2018 con un cono jugando en la zona catorce', 'worldEv');
 
 INSERT INTO objects VALUES (null, 'la Selección de Fútbol de México', 'natTeamtwo');
+INSERT INTO objects VALUES (null, 'el quinto partido', 'worldEvtwo');
 
 INSERT INTO objects VALUES (null, 'el New York Times', 'newspaper');
 INSERT INTO objects VALUES (null, 'the Guardian', 'newspaper');
