@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "mysql": "^2.17.1",
-    "prototypes": "^2.3.5"
+    "prototypes": "^2.3.5",
+    "twitter-node-client": "0.0.6"
   }
 }
