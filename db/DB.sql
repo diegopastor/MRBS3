@@ -896,6 +896,7 @@ INSERT INTO specials VALUES (null, 'la $ob-landmarkM nunca se construyó', 'mino
 INSERT INTO specials VALUES (null, 'solamente existe un $ob-structureH', 'minorDifference');
 INSERT INTO specials VALUES (null, '$ob-natTeam ganó $ob-worldEv', 'minorDifference');
 INSERT INTO specials VALUES (null, '$ob-natTeamtwo ganó $ob-worldEvtwo $sp-wackyTweak', 'minorDifference');
+INSERT INTO specials VALUES (null, '$ob-title nunca se escribió', 'minorDifference');
 
 INSERT INTO specials VALUES (null, 'pero los $ob-dulceP no existen', 'wackyTweak');
 
@@ -1626,6 +1627,7 @@ INSERT INTO specials VALUES (null, 'está leyendo $ob-title','miscella');
 INSERT INTO specials VALUES (null, 'está escuchando el audiolibro de $ob-title','miscella');
 INSERT INTO specials VALUES (null, 'está escribiendo un $ob-bookH acerca de $ob-thingP','miscella');
 INSERT INTO specials VALUES (null, 'está llevando a sus hijos a su clase de fútbol', 'miscella');
+INSERT INTO specials VALUES (null, 'está obsesionado con la idea de coleccionar $ob-thingPH', 'miscella');
 
 INSERT INTO specials VALUES (null, 'Esto nunca funcionará', 'saystuff');
 INSERT INTO specials VALUES (null, 'Te dije que volvería', 'saystuff');
@@ -2445,6 +2447,7 @@ INSERT INTO adjectives VALUES (null, 'cortísimo', 'quickt');
 INSERT INTO adjectives VALUES (null, 'corto', 'quickt');
 INSERT INTO adjectives VALUES (null, 'pequeño', 'quickt');
 INSERT INTO adjectives VALUES (null, 'aparentemente corto', 'quickt');
+INSERT INTO adjectives VALUES (null, 'fugaz', 'quickt');
 
 /* ************************************************* GENDER ************************************************ */
 
@@ -2465,6 +2468,10 @@ INSERT INTO people VALUES (null, 'Javier Duarte', 'politic');
 INSERT INTO people VALUES (null, 'Donald Trump', 'politic');
 INSERT INTO people VALUES (null, 'Vicente Fox', 'politic');
 INSERT INTO people VALUES (null, 'Salinas de Gortari', 'politic');
+INSERT INTO people VALUES (null, 'Jair Bolsonaro', 'politic');
+INSERT INTO people VALUES (null, 'Emmanuel Macron', 'politic');
+INSERT INTO people VALUES (null, 'Pedro Sánchez', 'politic');
+INSERT INTO people VALUES (null, 'Angela Merkel', 'politic');
 
 /* FILOSOFOS */
 
@@ -3496,6 +3503,7 @@ INSERT INTO objects VALUES (null, 'latas de red bull', 'thingPM');
 INSERT INTO objects VALUES (null, 'cajas fuertes', 'thingPM');
 INSERT INTO objects VALUES (null, 'palabras', 'thingPM');
 INSERT INTO objects VALUES (null, 'peines de bigote', 'thingPH');
+INSERT INTO objects VALUES (null, 'tazos de pokémon', 'thingPH');
 
 INSERT INTO objects VALUES (null, 'bailarín', 'moverH');
 INSERT INTO objects VALUES (null, 'bailarina de ballet', 'moverM');
@@ -3970,6 +3978,8 @@ INSERT INTO objects VALUES (null, 'La Sombra del Viento', 'title');
 INSERT INTO objects VALUES (null, 'El Quijote', 'title');
 INSERT INTO objects VALUES (null, 'Crimen y Castigo de Dostoievski', 'title');
 INSERT INTO objects VALUES (null, 'El Nombre de la Rosa', 'title');
+INSERT INTO objects VALUES (null, 'El Manifesto Comunista', 'title');
+INSERT INTO objects VALUES (null, '1984 de George Orwell', 'title');
 
 /*OBRAS DE ARTE*/
 
@@ -5035,13 +5045,20 @@ INSERT INTO objects VALUES (null, 'la Selección de Fútbol de Nigeria', 'natTea
 INSERT INTO objects VALUES (null, 'la Selección de Fútbol de Islandia', 'natTeam');
 INSERT INTO objects VALUES (null, 'la Selección de Fútbol de Senegal', 'natTeam');
 
-INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Rusia 2018', 'worldEv');
-INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Brasil 2014', 'worldEv');
-INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Sudáfrica 2010', 'worldEv');
-INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Alemania 2006', 'worldEv');
+INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Rusia 2018', 'worldcup');
+INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Brasil 2014', 'worldcup');
+INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Sudáfrica 2010', 'worldcup');
+INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Alemania 2006', 'worldcup');
 
-INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Rusia 2018 con un cono jugando como punta', 'worldEv');
-INSERT INTO objects VALUES (null, 'la Copa Mundial de la FIFA Rusia 2018 con un cono jugando en la zona catorce', 'worldEv');
+INSERT INTO objects VALUES (null, '$ob-worldcup con un cono jugando como $ob-soccerPosition', 'worldEv');
+INSERT INTO objects VALUES (null, '$ob-worldcup con un $ob-extinctanimalH jugando como $ob-soccerPosition', 'worldEv');
+INSERT INTO objects VALUES (null, '$ob-worldcup con un cono jugando en la zona catorce', 'worldEv');
+
+INSERT INTO objects VALUES (null, 'media punta', 'soccerPosition');
+INSERT INTO objects VALUES (null, 'enganche', 'soccerPosition');
+INSERT INTO objects VALUES (null, 'extremo izquierdo', 'soccerPosition');
+INSERT INTO objects VALUES (null, 'extremo derecho', 'soccerPosition');
+INSERT INTO objects VALUES (null, 'defensa central', 'soccerPosition');
 
 INSERT INTO objects VALUES (null, 'la Selección de Fútbol de México', 'natTeamtwo');
 INSERT INTO objects VALUES (null, 'el quinto partido', 'worldEvtwo');
