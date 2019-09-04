@@ -5,7 +5,7 @@ const configDb = require('../config/db');
 
 let connection = mysql.createConnection(configDb)
 
-exports.runQuery = (query, callback) => {
+exports.executeQuery = (query, callback) => {
     connection.connect((error) => {
         if (error) return callback(error)
         connection.query(query, (error, results) => {

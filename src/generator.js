@@ -1,10 +1,14 @@
 'use strict';
 
 require('prototypes');
-const {runQuery} = require('./sql');
+const {executeQuery} = require('./sql');
 
 const KEYWORD_PREFIX = '$';
 const KEYWORD_DIVIDER = '-';
+const MAX_USED_BASES = 40;
+const GET_USED_BASES_QUERY = 'SELECT SUM(USED) FROM BASES';
+const REFRESH_BASES_QUERY = 'UPDATE BASES SET USED = 0';
+const GET_BASE_QUERY = 'SELECT BASE FROM BASES WHERE USED != 1 ORDER BY RAND() LIMIT 1;
 const TABLES = {
   sp: ['special', 'specials'],
   ob: ['object', 'objects'],
@@ -25,8 +29,25 @@ exports.generateTweet = callback => {
 };
 
 function getBase(callback) {
-  let i = Math.floor(Math.random() * Math.floor(bases.length));
-  return callback(null, bases[i]);
+    refreshBases( (error) => {
+        if (error) return callback(`Can't refresh bases, ${error}`)
+        executeQuery(GET_BASE_QUERY, (error, result) => {
+            if (error) return callback(`Can't get base: ${error}`)
+            executeQuery(`UPDATE BASES SET USED = 1 WHERE BASE = "${result}";`, callback)
+        })
+    })
+}
+
+function refreshBases(callback) {
+    executeQuery(GET_USED_BASES_QUERY, (error, result) => {
+        if (error) return callback(`error obtaining used amount: ${error}`)
+        if (result > MAX_USED_BASES) {
+            executeQuery(REFRESH_BASES_QUERY, (error) => {
+                if (error) return callback(`error seting USED to 0: ${error}`)
+            })
+        }
+        return callback()
+    })
 }
 
 function fillBase(base, callback) {
@@ -58,7 +79,7 @@ function buildQuery(table, category, callback) {
 }
 
 function getReplacement(query, callback) {
-    runQuery((error, result) => {
+    executeQuery((error, result) => {
         return callback(error, result)
     })
 }
