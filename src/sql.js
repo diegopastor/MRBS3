@@ -3,14 +3,15 @@
 const mysql = require('mysql');
 const configDb = require('../config/db');
 
-let connection = mysql.createConnection(configDb)
+let connection = mysql.createConnection(configDb);
+connection.connect();
 
 exports.executeQuery = (query, callback) => {
-    connection.connect((error) => {
-        if (error) return callback(error)
-        connection.query(query, (error, results) => {
-            connection.end();
-            return callback(error, results)
-        })
-    });
-}
+  connection.query(query, (error, results) => {
+    return callback(error, results);
+  });
+};
+
+exports.endConnection = () => {
+  connection.end();
+};
