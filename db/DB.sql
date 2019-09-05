@@ -4623,7 +4623,7 @@ INSERT INTO objects VALUES (null, 'La luz está', 'conceptaux');
 INSERT INTO objects VALUES (null, 'La gravedad está', 'conceptaux');
 INSERT INTO objects VALUES (null, 'La magia está', 'conceptaux');
 INSERT INTO objects VALUES (null, 'La amistad está', 'conceptaux');
-INSERT INTO objects VALUES (null, 'Las palabras están', 'conceptaux');
+INSERT INTO objects VALUES (null, 'La palabra "bucólico" está', 'conceptaux');
 INSERT INTO objects VALUES (null, 'La música está', 'conceptaux');
 INSERT INTO objects VALUES (null, 'La burguesía está', 'conceptaux');
 INSERT INTO objects VALUES (null, 'La clase obrera está', 'conceptaux');

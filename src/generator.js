@@ -13,7 +13,7 @@ const GET_BASE_QUERY =
 const TABLES = {
   sp: ['special', 'specials'],
   ob: ['object', 'objects'],
-  adj: ['adjective', 'adjectives'],
+  ad: ['adjective', 'adjectives'],
   gen: ['gen_per', 'gender'],
   ver: ['verb', 'verbs'],
   per: ['person', 'people'],
@@ -25,6 +25,8 @@ exports.generateTweet = callback => {
     console.log(`\tAttempting to fill base ${base}...`);
     fillBase(base, (error, tweet) => {
       if (error) return callback(error, null);
+        // Start every sentence with Capital Letter and finish with dot
+        tweet = tweet.capitalize() + '.';
       return callback(null, tweet);
     });
   });
@@ -52,13 +54,14 @@ function refreshBases(callback) {
   console.log('\tAttempting to refresh bases...');
   executeQuery(GET_USED_BASES_QUERY, (error, result) => {
     if (error) return callback(`error obtaining used amount: ${error}`);
-    let refreshedBases = Object.values(result[0])[0];
-    if (refreshedBases > MAX_USED_BASES) {
+    let usedBases = Object.values(result[0])[0];
+    if (usedBases > MAX_USED_BASES) {
       executeQuery(REFRESH_BASES_QUERY, error => {
         if (error) return callback(`error seting USED to 0: ${error}`);
         console.log('Bases refreshed ');
       });
     }
+      console.log(`\tBases not refreshed: ${usedBases}/${MAX_USED_BASES} used`)
     return callback();
   });
 }
