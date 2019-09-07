@@ -41,7 +41,7 @@ INSERT INTO bases VALUES (null, '$sp-wackythree',0);
 
 INSERT INTO specials VALUES (null, 'El $per-familyH de las $ob-insectPM descubrió que el alcoholismo controla la $ob-theoryM','wackythree');
 INSERT INTO specials VALUES (null, 'Una $ob-insectM es capaz de mover la $ob-landmarkM con su mente','wackythree');
-INSERT INTO specials VALUES (null, 'Un $ob-plantH le susurra al oído a $per-histfig: “$sp-saystuff”','wackythree');
+INSERT INTO specials VALUES (null, 'Un $ob-plantH le susurra al oído a $per-histfig: "$sp-saystuff"','wackythree');
 INSERT INTO specials VALUES (null, 'Todos los $ob-jobHP de $ob-locality están viendo el mismo episodio de $ob-sitcom','wackythree');
 INSERT INTO specials VALUES (null, 'Un $ad-personalityH maestro $ad-gentilicioH dirige una escuela para $ob-animalPH','wackythree');
 
@@ -67,10 +67,10 @@ INSERT INTO specials VALUES (null, 'pasa volando.', 'floatt');
 INSERT INTO specials VALUES (null, 'sale arrastrándose de la boca de una $ob-animalM.', 'floatt');
 INSERT INTO specials VALUES (null, 'aparece en la cima de un $ob-structureH hecho de $ad-mat.', 'floatt');
 INSERT INTO specials VALUES (null, 'aparece en la cima de una $ob-structureM hecha de $ad-mat.', 'floatt');
-INSERT INTO specials VALUES (null, 'Luego, aparece una bruja y dice: “Se preguntarán por qué los he reunido aquí”', 'leaftwo');
-INSERT INTO specials VALUES (null, 'Una niña pequeña dice: “Nos va a matar a todos”', 'leaftwo');
-INSERT INTO specials VALUES (null, 'Luego, un $ob-animalH dice: “Me pertenece a mí“', 'leaftwo');
-INSERT INTO specials VALUES (null, 'Un señor que pasa por ahí dice: “Así es como termina todo”', 'leaftwo');
+INSERT INTO specials VALUES (null, 'Luego, aparece una bruja y dice: "Se preguntarán por qué los he reunido aquí"', 'leaftwo');
+INSERT INTO specials VALUES (null, 'Una niña pequeña dice: "Nos va a matar a todos"', 'leaftwo');
+INSERT INTO specials VALUES (null, 'Luego, un $ob-animalH dice: "Me pertenece a mí"', 'leaftwo');
+INSERT INTO specials VALUES (null, 'Un señor que pasa por ahí dice: "Así es como termina todo"', 'leaftwo');
 INSERT INTO specials VALUES (null, 'Se escapó del sueño de un $per-rulerH $ad-gentilicioH', 'leaftwo');
 INSERT INTO specials VALUES (null, 'Se escapó del sueño de una $per-rulerM $ad-gentilicioM', 'leaftwo');
 
@@ -2559,6 +2559,12 @@ INSERT INTO people VALUES (null, 'Walt Disney', 'celebritt');
 INSERT INTO people VALUES (null, 'Lionel Messi', 'celebritt');
 INSERT INTO people VALUES (null, 'Cristiano Ronaldo', 'celebritt');
 
+INSERT INTO people VALUES (null, 'Roberto Palazuelos', 'memecelebritt');
+INSERT INTO people VALUES (null, 'Alfredo Adame', 'memecelebritt');
+INSERT INTO people VALUES (null, 'Carlos Trejo', 'memecelebritt');
+INSERT INTO people VALUES (null, 'Lady Cien Pesos', 'memecelebritt');
+INSERT INTO people VALUES (null, 'Yorsh de Polanco', 'memecelebritt');
+INSERT INTO people VALUES (null, 'Luisito Comunica', 'memecelebritt');
 
 /* NEXOS FAMILIARES*/
 
@@ -3625,7 +3631,7 @@ INSERT INTO objects VALUES (null, 'cordillera', 'landformM');
 INSERT INTO objects VALUES (null, 'arrecife de coral', 'landformH');
 INSERT INTO objects VALUES (null, 'hormiguero', 'landformH');
 INSERT INTO objects VALUES (null, 'pantano', 'landformH');
-INSERT INTO objects VALUES (null, 'estrella fugaz ', 'landformM');
+INSERT INTO objects VALUES (null, 'estrella fugaz', 'landformM');
 INSERT INTO objects VALUES (null, 'supernova', 'landformM');
 INSERT INTO objects VALUES (null, 'nube tormentosa', 'landformM');
 INSERT INTO objects VALUES (null, 'rayo', 'landformH');
@@ -4572,7 +4578,7 @@ INSERT INTO objects VALUES (null, 'Minecraft', 'concept');
 INSERT INTO objects VALUES (null, 'HalfLife 3', 'concept');
 INSERT INTO objects VALUES (null, 'Google', 'concept');
 INSERT INTO objects VALUES (null, 'BuzzFeed', 'concept');
-INSERT INTO objects VALUES (null, 'los “Millenials”', 'concept');
+INSERT INTO objects VALUES (null, 'los "Millenials"', 'concept');
 INSERT INTO objects VALUES (null, 'Airbnb', 'concept');
 INSERT INTO objects VALUES (null, 'Uber', 'concept');
 INSERT INTO objects VALUES (null, 'la fama de YouTube', 'concept');

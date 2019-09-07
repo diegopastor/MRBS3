@@ -25,8 +25,8 @@ exports.generateTweet = callback => {
     console.log(`\tAttempting to fill base ${base}...`);
     fillBase(base, (error, tweet) => {
       if (error) return callback(error, null);
-        // Start every sentence with Capital Letter and finish with dot
-        tweet = tweet.capitalize() + '.';
+      // Start every sentence with Capital Letter and finish with dot
+      tweet = tweet.capitalize() + '.';
       return callback(null, tweet);
     });
   });
@@ -40,7 +40,7 @@ function getBase(callback) {
       if (error) return callback(`Can't get base: ${error}`);
       let base = Object.values(result[0])[0];
       executeQuery(
-        `UPDATE BASES SET USED = 1 WHERE BASE = "${base}";`,
+        `UPDATE BASES SET USED = 1 WHERE BASE = '${base}';`,
         error => {
           if (error) return callback(`Can't updated used bases: ${error}`);
           return callback(null, base);
@@ -55,14 +55,16 @@ function refreshBases(callback) {
   executeQuery(GET_USED_BASES_QUERY, (error, result) => {
     if (error) return callback(`error obtaining used amount: ${error}`);
     let usedBases = Object.values(result[0])[0];
-    if (usedBases > MAX_USED_BASES) {
+    if (usedBases >= MAX_USED_BASES) {
       executeQuery(REFRESH_BASES_QUERY, error => {
         if (error) return callback(`error seting USED to 0: ${error}`);
         console.log('Bases refreshed ');
+        return callback();
       });
+    } else {
+      console.log(`\tBases not refreshed: ${usedBases}/${MAX_USED_BASES} used`);
+      return callback();
     }
-      console.log(`\tBases not refreshed: ${usedBases}/${MAX_USED_BASES} used`)
-    return callback();
   });
 }
 
@@ -75,7 +77,8 @@ function fillBase(base, callback) {
       .substringUpTo(' ')
       .substringUpTo('.')
       .substringUpTo(',')
-      .substringUpTo('"');
+      .substringUpTo('"')
+      .substringUpTo(':');
     let table = leftmostToReplace.split(KEYWORD_DIVIDER)[0];
     let category = leftmostToReplace.split(KEYWORD_DIVIDER)[1];
     buildQuery(table, category, query => {
