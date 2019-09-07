@@ -64,7 +64,7 @@ INSERT INTO specials VALUES (null, 'Habla del amor entre $ob-thingP','sp-newArtQ
 INSERT INTO specials VALUES (null, 'Habla de $ob-war','sp-newArtQuirkMusic');
 INSERT INTO specials VALUES (null, 'Cuenta la historia de un $ob-thingH','sp-newArtQuirkMusic');
 
-INSERT INTO specials VALUES (null, 'Retrata un $ob-landmarkH hecho de $ob-stuff','sp-newArtQuirkPaint');
+INSERT INTO specials VALUES (null, 'Retrata un $ob-landmarkH hecho de $ob-stuff','newArtQuirkPaint');
 
 INSERT INTO bases VALUES (null, 'Un $ob-thingH $sp-floatt $sp-leaftwo',0);
 
@@ -946,7 +946,7 @@ INSERT INTO specials VALUES (null, 'Un $ob-bookH $ad-era describe $sp-diversifyT
 
 INSERT INTO specials VALUES (null, 'capaz de crear $ob-currency', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'capaz de mejorar la inteligencia de quién lo use', 'magicbenefit');
-INSERT INTO specials VALUES (null, 'capaz de hacer más atractivas a las personas', 'magicbenefit')
+INSERT INTO specials VALUES (null, 'capaz de hacer más atractivas a las personas', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'capaz de cumplir tres deseos', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'capaz de cumplir tres deseos', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'que puede hacerte invisible', 'magicbenefit');
@@ -1029,7 +1029,7 @@ INSERT INTO specials VALUES (null, '$ob-soc $per-scholarPH se imagina una $ob-st
 INSERT INTO specials VALUES (null, '$sp-mid $sp-star reemplazados por $ob-thingP', 'alternoz');
 
 INSERT INTO specials VALUES (null, 'un $ob-thingH', 'chaser');
-INSERT INTO specials VALUES (null, 'un $ob-thingM', 'chaser');
+INSERT INTO specials VALUES (null, 'una $ob-thingM', 'chaser');
 INSERT INTO specials VALUES (null, '$ob-space', 'chaser');
 INSERT INTO specials VALUES (null, '$ob-sunntwo', 'chaser');
 INSERT INTO specials VALUES (null, 'un $ob-fruitH gigante', 'chaser');
@@ -1669,6 +1669,16 @@ INSERT INTO specials VALUES (null, 'Ya quiero que sea viernes de ahorcar rucas',
 
 INSERT INTO verbs VALUES (null, 'pide un taxi de $ob-locality a', 'transporte');
 
+INSERT INTO verbs VALUES (null, 'dando a luz a', 'partGerund');
+INSERT INTO verbs VALUES (null, 'convirtiéndose en', 'partGerund');
+INSERT INTO verbs VALUES (null, 'teniendo relaciones sexuales con', 'partGerund');
+INSERT INTO verbs VALUES (null, 'enamorándose de', 'partGerund');
+INSERT INTO verbs VALUES (null, 'acordándose de', 'partGerund');
+INSERT INTO verbs VALUES (null, 'comiéndose', 'partGerund');
+INSERT INTO verbs VALUES (null, 'torturando', 'partGerund');
+INSERT INTO verbs VALUES (null, 'proponiéndole matrimonio a', 'partGerund');
+INSERT INTO verbs VALUES (null, 'hablando con', 'partGerund');
+
 INSERT INTO verbs VALUES (null, 'convertirse en', 'part');
 INSERT INTO verbs VALUES (null, 'robar', 'part');
 INSERT INTO verbs VALUES (null, 'matar', 'part');
@@ -1985,16 +1995,6 @@ INSERT INTO verbs VALUES (null, 'mira', 'chased');
 INSERT INTO verbs VALUES (null, 'observa a', 'chased');
 INSERT INTO verbs VALUES (null, 'está buscando', 'chased');
 INSERT INTO verbs VALUES (null, 'baila con', 'chased');
-
-INSERT INTO verbs VALUES (null, 'dando a luz a', 'part');
-INSERT INTO verbs VALUES (null, 'convirtiéndose en', 'part');
-INSERT INTO verbs VALUES (null, 'teniendo relaciones sexuales con', 'part');
-INSERT INTO verbs VALUES (null, 'enamorándose de', 'part');
-INSERT INTO verbs VALUES (null, 'acordándose de', 'part');
-INSERT INTO verbs VALUES (null, 'comiéndose', 'part');
-INSERT INTO verbs VALUES (null, 'torturando', 'part');
-INSERT INTO verbs VALUES (null, 'proponiéndole matrimonio a', 'part');
-INSERT INTO verbs VALUES (null, 'hablando con', 'part');
 
 INSERT INTO verbs VALUES (null, 'se convierta en un $ob-thingH', 'hallu');
 INSERT INTO verbs VALUES (null, 'se convierta en una $ob-thingM', 'hallu');
@@ -3333,7 +3333,7 @@ INSERT INTO objects VALUES (null, 'el Cometa Halley', 'space');
 INSERT INTO objects VALUES (null, 'la Vía Láctea', 'space');
 INSERT INTO objects VALUES (null, 'Marte', 'space');
 INSERT INTO objects VALUES (null, 'el universo', 'space');
-INSERT INTO objects VALUES (null, 'la luz de las esrellas', 'space');
+INSERT INTO objects VALUES (null, 'la luz de las estrellas', 'space');
 INSERT INTO objects VALUES (null, 'la luz de la Luna', 'space');
 
 INSERT INTO objects VALUES (null, 'un universo paralelo', 'paral');
@@ -4177,7 +4177,7 @@ INSERT INTO objects VALUES (null, 'urraca', 'flyerM');
 INSERT INTO objects VALUES (null, 'muercíelago', 'flyerH');
 INSERT INTO objects VALUES (null, 'cuervo', 'flyerH');
 
-INSERT INTO objects VALUES (null, 'golondrina', 'flyerPM');
+INSERT INTO objects VALUES (null, 'golondrinas', 'flyerPM');
 INSERT INTO objects VALUES (null, 'mariposas', 'flyerPM');
 INSERT INTO objects VALUES (null, 'polillas', 'flyerPM');
 INSERT INTO objects VALUES (null, 'albatros', 'flyerPH');
