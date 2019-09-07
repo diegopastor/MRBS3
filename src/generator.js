@@ -27,6 +27,9 @@ exports.generateTweet = callback => {
       if (error) return callback(error, null);
       // Start every sentence with Capital Letter and finish with dot
       tweet = tweet.capitalize() + '.';
+      // Replace occurences of " a el " for " al " and " de el " for " del "
+      tweet = tweet.replace(" a el ", " al ");
+      tweet = tweet.replace(" de el ", " del ");
       return callback(null, tweet);
     });
   });

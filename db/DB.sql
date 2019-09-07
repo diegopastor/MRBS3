@@ -1,7 +1,7 @@
 /* ******************************************* DATABASE SETUP ********************************************* */
 
-CREATE DATABASE MRBS3
-use MRBS3
+CREATE DATABASE MRBS3;
+use MRBS3;
 CREATE TABLE bases (id INT(3) AUTO_INCREMENT NOT NULL,base VARCHAR(200),used INT(3) NOT NULL DEFAULT '0' ,PRIMARY KEY (id));
 CREATE TABLE objects (id INT(3) AUTO_INCREMENT NOT NULL,object VARCHAR(150),tag VARCHAR(22),PRIMARY KEY (id));
 CREATE TABLE specials (id INT(3) AUTO_INCREMENT NOT NULL,special VARCHAR(300),tag VARCHAR(22),PRIMARY KEY (id));
@@ -48,12 +48,23 @@ INSERT INTO specials VALUES (null, 'Un $ad-personalityH maestro $ad-gentilicioH 
 INSERT INTO bases VALUES (null, '$sp-wackyfour',0);
 
 INSERT INTO specials VALUES (null, '$per-histfig se dirige a $ob-locality en Uber. Se siente fuera de lugar','wackyfour');
-INSERT INTO specials VALUES (null, 'Una serie de $ob-insectPM acomodadas estratégicamente deletrean la frase: $ob-consptheory','wackyfour');
+INSERT INTO specials VALUES (null, '$sp-organizedToSpell deletrean la frase: $ob-consptheory','wackyfour');
 INSERT INTO specials VALUES (null, 'Un día te despiertas y caes en la cuenta de que te convertiste en $per-politic','wackyfour');
 INSERT INTO specials VALUES (null, 'El $ob-soccerteamH ganó un partido y llovieron $ob-thingP del cielo','wackyfour');
-INSERT INTO specials VALUES (null, 'Se descubre una canción inédita de $per-musician. Habla del amor entre $ob-thingP','wackyfour');
+INSERT INTO specials VALUES (null, 'Se descubre una canción inédita de $per-musician. $sp-newArtQuirkMusic','wackyfour');
+INSERT INTO specials VALUES (null, 'En $ob-locality se descubre una pintura inédita de $per-paintor. $sp-newArtQuirkPaint','wackyfour');
 INSERT INTO specials VALUES (null, 'Un $ob-shipH $ver-sink un $ob-lakeH lleno de $ob-liquid','wackyfour');
 
+INSERT INTO specials VALUES (null, 'Una serie de $ob-insectPM acomodadas estratégicamente','organizedToSpell');
+INSERT INTO specials VALUES (null, 'Visitas $ob-locality y las nubes en el cielo','organizedToSpell');
+INSERT INTO specials VALUES (null, '$per-memecelebritt está comiendo una sopa de letras y las letras en su cuchara ','organizedToSpell');
+INSERT INTO specials VALUES (null, 'Sobrevuelas $ob-locality por la noche y puedes ver como las luces en la tierra','organizedToSpell');
+
+INSERT INTO specials VALUES (null, 'Habla del amor entre $ob-thingP','sp-newArtQuirkMusic');
+INSERT INTO specials VALUES (null, 'Habla de $ob-war','sp-newArtQuirkMusic');
+INSERT INTO specials VALUES (null, 'Cuenta la historia de un $ob-thingH','sp-newArtQuirkMusic');
+
+INSERT INTO specials VALUES (null, 'Retrata un $ob-landmarkH hecho de $ob-stuff','sp-newArtQuirkPaint');
 
 INSERT INTO bases VALUES (null, 'Un $ob-thingH $sp-floatt $sp-leaftwo',0);
 
@@ -935,7 +946,7 @@ INSERT INTO specials VALUES (null, 'Un $ob-bookH $ad-era describe $sp-diversifyT
 
 INSERT INTO specials VALUES (null, 'capaz de crear $ob-currency', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'capaz de mejorar la inteligencia de quién lo use', 'magicbenefit');
-INSERT INTO specials VALUES (null, 'capaz de hacer más atractivas a las personas', 'magicbenefit');
+INSERT INTO specials VALUES (null, 'capaz de hacer más atractivas a las personas', 'magicbenefit')
 INSERT INTO specials VALUES (null, 'capaz de cumplir tres deseos', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'capaz de cumplir tres deseos', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'que puede hacerte invisible', 'magicbenefit');
@@ -1050,7 +1061,6 @@ INSERT INTO specials VALUES (null, '$ob-soc $per-scholarPH $sp-cre donde todo es
 INSERT INTO specials VALUES (null, 'Un $per-scholarH $sp-disco $sp-lostbook $per-philo sobre el tema de $ob-concept','wackytwelve');
 
 INSERT INTO specials VALUES (null, 'un desierto en el que cada grano de arena es', 'placewhere');
-INSERT INTO specials VALUES (null, 'beach where every grain of sand is', 'placewhere');
 INSERT INTO specials VALUES (null, 'una playa en la que cada grano de arena es', 'placewhere');
 INSERT INTO specials VALUES (null, 'un $ob-treeH en el que cada hoja es', 'placewhere');
 INSERT INTO specials VALUES (null, 'un alfabeto en el que cada letra es', 'placewhere');
@@ -1871,7 +1881,7 @@ INSERT INTO verbs VALUES (null, 'escucha "Hotel California" en su iPod', 'sneez'
 INSERT INTO verbs VALUES (null, 'establece', 'establish');
 INSERT INTO verbs VALUES (null, 'dirige', 'establish');
 INSERT INTO verbs VALUES (null, 'organiza', 'establish');
-INSERT INTO verbs VALUES (null, 'se encargada de', 'establish');
+INSERT INTO verbs VALUES (null, 'se encarga de', 'establish');
 INSERT INTO verbs VALUES (null, 'se encarga de dirigir', 'establish');
 
 INSERT INTO verbs VALUES (null, 'aprueba una ley', 'pa');
@@ -2725,7 +2735,7 @@ INSERT INTO people VALUES (null, 'niño', 'commonerH');
 INSERT INTO people VALUES (null, 'hombre', 'commonerH');
 
 
-/* MÚSICOS*/ 
+/* ARTISTS */
 
 INSERT INTO people VALUES (null, 'Paquita la del Barrio', 'musician');
 INSERT INTO people VALUES (null, 'Joan Sebastian', 'musician');
@@ -2757,6 +2767,23 @@ INSERT INTO people VALUES (null, 'Alejandra Guzman', 'musician');
 INSERT INTO people VALUES (null, 'Lucero', 'musician');
 INSERT INTO people VALUES (null, 'Espinoza Paz', 'musician');
 INSERT INTO people VALUES (null, 'Cristian Castro', 'musician');
+
+INSERT INTO people VALUES (null, 'Pollock', 'paintor');
+INSERT INTO people VALUES (null, 'Picasso', 'paintor');
+INSERT INTO people VALUES (null, 'Rothko', 'paintor');
+INSERT INTO people VALUES (null, 'Warhol', 'paintor');
+INSERT INTO people VALUES (null, 'Kandinsky', 'paintor');
+INSERT INTO people VALUES (null, 'Mondrian', 'paintor');
+INSERT INTO people VALUES (null, 'Basquiat', 'paintor');
+INSERT INTO people VALUES (null, 'Monet', 'paintor');
+INSERT INTO people VALUES (null, 'Miró', 'paintor');
+INSERT INTO people VALUES (null, 'Dali', 'paintor');
+INSERT INTO people VALUES (null, 'Klimt', 'paintor');
+INSERT INTO people VALUES (null, 'Goya', 'paintor');
+INSERT INTO people VALUES (null, 'El Greco', 'paintor');
+INSERT INTO people VALUES (null, 'Velázquez', 'paintor');
+INSERT INTO people VALUES (null, 'Botticelli', 'paintor');
+INSERT INTO people VALUES (null, 'Vermeer', 'paintor');
 
 /* TRABAJOS ANTIGUOS */
 
@@ -3193,6 +3220,11 @@ INSERT INTO objects VALUES (null, 'Puerta de Alcalá', 'landmarkM');
 INSERT INTO objects VALUES (null, 'Sagrada Familia', 'landmarkM');
 INSERT INTO objects VALUES (null, 'Ciudad Prohibida', 'landmarkM');
 INSERT INTO objects VALUES (null, 'basílica de Santa María de Guadalupe', 'landmarkM');
+INSERT INTO objects VALUES (null, 'Ángel de la Independencia', 'landmarkH');
+INSERT INTO objects VALUES (null, 'Palacio de Bellas Artes', 'landmarkH');
+INSERT INTO objects VALUES (null, 'Taj Mahal', 'landmarkH');
+INSERT INTO objects VALUES (null, 'Coliseo Romano', 'landmarkH');
+INSERT INTO objects VALUES (null, 'Guggenheim de Bilbao', 'landmarkH');
 
 /* EDIFICACIONES */
 
@@ -3800,7 +3832,7 @@ INSERT INTO objects VALUES (null, 'quince', 'smallNum');
 INSERT INTO objects VALUES (null, 'dieciséis', 'smallNum');
 INSERT INTO objects VALUES (null, 'veinte', 'smallNum');
 INSERT INTO objects VALUES (null, 'veintiún', 'smallNum');
-INSERT INTO objects VALUES (null, 'vientidos', 'smallNum');
+INSERT INTO objects VALUES (null, 'veintidos', 'smallNum');
 
 INSERT INTO objects VALUES (null, 'ocho mil', 'bigNum');
 INSERT INTO objects VALUES (null, 'nueve mil', 'bigNum');
