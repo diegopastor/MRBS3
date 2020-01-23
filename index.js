@@ -3,7 +3,8 @@
 const {generateTweet} = require('./src/generator');
 // const {postTweet, sendDM} = require('./src/twitter)
 
-const TWEET_TIME_INTERVAL = 1000 * 60 * 60 * 4; // 4 Hours
+// const TWEET_TIME_INTERVAL = 1000 * 60 * 60 * 4; // 4 Hours
+const TWEET_TIME_INTERVAL = 1000 * 1;
 
 const startBot = () => {
   console.log('Starting Bot...');

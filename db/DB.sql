@@ -7,7 +7,6 @@ CREATE TABLE objects (id INT(3) AUTO_INCREMENT NOT NULL,object VARCHAR(150),tag 
 CREATE TABLE specials (id INT(3) AUTO_INCREMENT NOT NULL,special VARCHAR(300),tag VARCHAR(22),PRIMARY KEY (id));
 CREATE TABLE verbs (id INT(3) AUTO_INCREMENT NOT NULL,verb VARCHAR(100),tag VARCHAR(22),PRIMARY KEY (id));
 CREATE TABLE people (id INT(3) AUTO_INCREMENT NOT NULL,person VARCHAR(48),tag VARCHAR(22),PRIMARY KEY (id));
-CREATE TABLE gender (gen_per VARCHAR(48),gender VARCHAR(1),PRIMARY KEY (gen_per));
 CREATE TABLE adjectives (id INT(3) AUTO_INCREMENT NOT NULL,adjective VARCHAR(48),tag VARCHAR(22),PRIMARY KEY (id));
 
 /* ******************************************* BASES and CHILDS********************************************* */
@@ -2458,10 +2457,6 @@ INSERT INTO adjectives VALUES (null, 'corto', 'quickt');
 INSERT INTO adjectives VALUES (null, 'pequeño', 'quickt');
 INSERT INTO adjectives VALUES (null, 'aparentemente corto', 'quickt');
 INSERT INTO adjectives VALUES (null, 'fugaz', 'quickt');
-
-/* ************************************************* GENDER ************************************************ */
-
-INSERT INTO gender VALUES ('Isaac Newton', 'h'); 
 
 /* ************************************************ PEOPLE ************************************************* */
 
