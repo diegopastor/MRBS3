@@ -2,7 +2,7 @@
 
 🦀🍊🐥🌳🦋☂️🦉🌛🗝
 
-![Sentence Being Replaced](https://github.com/diegopastor/MRBS3/blob/master/type.gif)
+![Sentence Being Replaced](https://github.com/diegopastor/MRBS3/blob/master/assets/img/type.gif)
 
 ## What is MRBS3 ?
 
