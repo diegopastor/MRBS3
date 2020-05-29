@@ -11,6 +11,6 @@
   "dependencies": {
     "mysql": "^2.17.1",
     "prototypes": "^2.3.5",
-    "twitter-node-client": "0.0.6"
+    "twit": "^2.2.11"
   }
 }

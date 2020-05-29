@@ -1,6 +1,10 @@
 'use strict';
 
-const { Twitter } = require('twitter-node-client');
-const configTwitter = require('../config/twitter');
+const Twit = require('twit');
+const config = require('../config/twitter');
 
+const T = new Twit(config);
 
+exports.postTweet = (tweet, callback) => {
+	T.post('statuses/update', { status: tweet }, callback)
+};
