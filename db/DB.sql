@@ -17,6 +17,7 @@ INSERT INTO specials VALUES(null,'En las próximas elecciones $per-musician esta
 INSERT INTO specials VALUES(null,'Se acercan las próximas elecciones de $ob-locality. Un $ob-thingH encabeza las encuestas','political');
 INSERT INTO specials VALUES(null,'$ob-locality tiene un nuevo presidente: un $ob-thingH','political');
 INSERT INTO specials VALUES(null,'El parlamento de $ob-locality quiere promulgar una ley para prohibir $ob-concept','political');
+INSERT INTO specials VALUES(null,'A la gente de $ob-locality le preocupa $ob-protest que busca prohibir $ob-concept','political');
 
 INSERT INTO bases VALUES (null, '$sp-wackyone',0);
 
@@ -56,12 +57,12 @@ INSERT INTO specials VALUES (null, 'Un $ob-shipH $ver-sink un $ob-lakeH lleno de
 
 INSERT INTO specials VALUES (null, 'Una serie de $ob-insectPM acomodadas estratégicamente','organizedToSpell');
 INSERT INTO specials VALUES (null, 'Visitas $ob-locality y las nubes en el cielo','organizedToSpell');
-INSERT INTO specials VALUES (null, '$per-memecelebritt está comiendo una sopa de letras y las letras en su cuchara ','organizedToSpell');
+INSERT INTO specials VALUES (null, '$per-memecelebritt está comiendo una sopa de letras y las letras en su cuchara','organizedToSpell');
 INSERT INTO specials VALUES (null, 'Sobrevuelas $ob-locality por la noche y puedes ver como las luces en la tierra','organizedToSpell');
 
-INSERT INTO specials VALUES (null, 'Habla del amor entre $ob-thingP','sp-newArtQuirkMusic');
-INSERT INTO specials VALUES (null, 'Habla de $ob-war','sp-newArtQuirkMusic');
-INSERT INTO specials VALUES (null, 'Cuenta la historia de un $ob-thingH','sp-newArtQuirkMusic');
+INSERT INTO specials VALUES (null, 'Habla del amor entre $ob-thingP','newArtQuirkMusic');
+INSERT INTO specials VALUES (null, 'Habla de $ob-war','newArtQuirkMusic');
+INSERT INTO specials VALUES (null, 'Cuenta la historia de un $ob-thingH','newArtQuirkMusic');
 
 INSERT INTO specials VALUES (null, 'Retrata un $ob-landmarkH hecho de $ob-stuff','newArtQuirkPaint');
 
@@ -307,7 +308,7 @@ INSERT INTO bases VALUES (null, '$sp-diversifyEight $sp-eggdo',0);
 
 INSERT INTO specials VALUES (null, 'Un $ob-fruitH hecho de $ad-mat', 'diversifyEight');
 INSERT INTO specials VALUES (null, 'Un huevo color $ad-color', 'diversifyEight');
-INSERT INTO specials VALUES (null, '$Un talisman de $ad-mat', 'diversifyEight');
+INSERT INTO specials VALUES (null, 'Un talisman de $ad-mat', 'diversifyEight');
 INSERT INTO specials VALUES (null, 'Existe un anillo que', 'diversifyEight');
 INSERT INTO specials VALUES (null, 'Hay un $ob-gemH que', 'diversifyEight');
 INSERT INTO specials VALUES (null, 'Existe un $ob-deviceH que', 'diversifyEight');
@@ -897,6 +898,9 @@ INSERT INTO specials VALUES (null, 'todo el mundo tiene $ob-brainH', 'minorDiffe
 INSERT INTO specials VALUES (null, 'la titularidad del poder en $ob-locality se decide con $ob-game', 'minorDifference');
 INSERT INTO specials VALUES (null, 'está prohibido $ver-burnverbInf', 'minorDifference');
 INSERT INTO specials VALUES (null, 'el color $ad-color no existe', 'minorDifference');
+INSERT INTO specials VALUES (null, 'solamente existe el color $ad-color', 'minorDifference');
+INSERT INTO specials VALUES (null, 'nadie sabe como pronunciar la letra "$ob-letter"', 'minorDifference');
+INSERT INTO specials VALUES (null, 'no existe la letra "$ob-letter"', 'minorDifference');
 INSERT INTO specials VALUES (null, 'no existen los $ob-thingPH', 'minorDifference');
 INSERT INTO specials VALUES (null, 'está prohibido $ver-poett', 'minorDifference');
 INSERT INTO specials VALUES (null, '$per-celebritt no tiene página de Wikipedia', 'minorDifference');
@@ -907,6 +911,8 @@ INSERT INTO specials VALUES (null, 'solamente existe un $ob-structureH', 'minorD
 INSERT INTO specials VALUES (null, '$ob-natTeam ganó $ob-worldEv', 'minorDifference');
 INSERT INTO specials VALUES (null, '$ob-natTeamtwo ganó $ob-worldEvtwo $sp-wackyTweak', 'minorDifference');
 INSERT INTO specials VALUES (null, '$ob-title nunca se escribió', 'minorDifference');
+INSERT INTO specials VALUES (null, '$ob-title tiene $ob-smallNum páginas menos', 'minorDifference');
+INSERT INTO specials VALUES (null, '$ob-title tiene $ob-smallNum páginas más', 'minorDifference');
 
 INSERT INTO specials VALUES (null, 'pero los $ob-dulceP no existen', 'wackyTweak');
 
@@ -953,7 +959,7 @@ INSERT INTO specials VALUES (null, 'que puede hacerte ser capaz de volar', 'magi
 INSERT INTO specials VALUES (null, 'con el que puedes parar el tiempo', 'magicbenefit');
 INSERT INTO specials VALUES (null, 'con el que puedes hacer viajes en el tiempo', 'magicbenefit');
 
-INSERT INTO specials VALUES (null, 'Lo único malo es que con cada uso hay una pequeña posibilidad de que te mate', 'tragicunlikely');
+INSERT INTO specials VALUES (null, 'Lo único malo es que con cada uso hay una pequeña posibilidad de morir', 'tragicunlikely');
 INSERT INTO specials VALUES (null, 'Sin embargo, usarlo puede convertirte en $ob-animalH', 'tragicunlikely');
 INSERT INTO specials VALUES (null, 'Un $per-genH $ad-gentilicioH lo usa para hacerse millonario', 'tragicunlikely');
 INSERT INTO specials VALUES (null, 'Usarlo puede retrasar el tiempo $ob-smallNum años', 'tragicunlikely');
@@ -961,6 +967,8 @@ INSERT INTO specials VALUES (null, 'Tiene un efecto secundario: usarlo te puede 
 INSERT INTO specials VALUES (null, 'Tiene un efecto secundario: usarlo puede causar disfunción eréctil', 'tragicunlikely');
 INSERT INTO specials VALUES (null, 'Usarlo puede transportarte a un universo paralelo', 'tragicunlikely');
 INSERT INTO specials VALUES (null, 'Tiene un defecto: desaparece a la persona que más quieres al ser usado', 'tragicunlikely');
+INSERT INTO specials VALUES (null, 'Cada que es usado, un $ob-jobH pierde su empleo', 'tragicunlikely');
+INSERT INTO specials VALUES (null, 'Usarlo puede desaparecer para siempre a $ob-concept', 'tragicunlikely');
 
 INSERT INTO specials VALUES (null, 'un $ob-thingH perdido', 'diversifyTwentytwo');
 INSERT INTO specials VALUES (null, 'un $ob-candleH perdido', 'diversifyTwentytwo');
@@ -1211,9 +1219,9 @@ INSERT INTO specials VALUES (null, 'recibe un extraño mensaje que dice que', 'r
 INSERT INTO specials VALUES (null, 'lee en un libro $ad-era que', 'realitwo');
 
 INSERT INTO specials VALUES (null, 'la sociedad está', 'live');
-INSERT INTO specials VALUES (null, 'la economia está', 'live');
+INSERT INTO specials VALUES (null, 'la economía está', 'live');
 INSERT INTO specials VALUES (null, 'una sociedad $ad-gentilicioM está', 'live');
-INSERT INTO specials VALUES (null, 'la economia $ad-gentilicioM está', 'live');
+INSERT INTO specials VALUES (null, 'la economía $ad-gentilicioM está', 'live');
 INSERT INTO specials VALUES (null, 'la vida de $per-politic está', 'live');
 INSERT INTO specials VALUES (null, 'la vida de $per-celebritt está', 'live');
 INSERT INTO specials VALUES (null, 'la Premier League está', 'live');
@@ -1663,6 +1671,7 @@ INSERT INTO specials VALUES (null, 'Imaginemos cosas chingonas', 'saystuff');
 INSERT INTO specials VALUES (null, 'ELLA ES CALLAITA!', 'saystuff');
 INSERT INTO specials VALUES (null, 'Baby, la vida es un ciclo', 'saystuff');
 INSERT INTO specials VALUES (null, 'Ya quiero que sea viernes de ahorcar rucas', 'saystuff');
+INSERT INTO specials VALUES (null, 'Un golpe de dados, jamás abolirá el azar', 'saystuff');
 
 /* ************************************************** VERBS ************************************************ */
 
@@ -1947,7 +1956,7 @@ INSERT INTO verbs VALUES (null, 'teniendo conversaciones por teléfono', 'burnin
 INSERT INTO verbs VALUES (null, 'jugando ajedrez', 'burningP');
 INSERT INTO verbs VALUES (null, 'perdidos', 'burningP');
 INSERT INTO verbs VALUES (null, 'borrachos', 'burningP');
-INSERT INTO verbs VALUES (null, 'roncandos', 'burningP');
+INSERT INTO verbs VALUES (null, 'roncando', 'burningP');
 INSERT INTO verbs VALUES (null, 'durmiendo', 'burningP');
 INSERT INTO verbs VALUES (null, 'bebiendo $ob-alco', 'burningP');
 
@@ -2477,6 +2486,7 @@ INSERT INTO people VALUES (null, 'Jair Bolsonaro', 'politic');
 INSERT INTO people VALUES (null, 'Emmanuel Macron', 'politic');
 INSERT INTO people VALUES (null, 'Pedro Sánchez', 'politic');
 INSERT INTO people VALUES (null, 'Angela Merkel', 'politic');
+INSERT INTO people VALUES (null, 'Fernández Noroña', 'politic');
 
 /* FILOSOFOS */
 
@@ -2495,6 +2505,7 @@ INSERT INTO people VALUES (null, 'Alan Watts', 'philo');
 INSERT INTO people VALUES (null, 'Jordan Peterson', 'philo');
 INSERT INTO people VALUES (null, 'Carl Jung', 'philo');
 INSERT INTO people VALUES (null, 'Dostoevsky', 'philo');
+INSERT INTO people VALUES (null, 'Slavoj Žižek', 'philo');
 
 /* FIGURAS */
 
@@ -3190,6 +3201,8 @@ INSERT INTO objects VALUES (null, 'la Revolución Rusa', 'war');
 INSERT INTO objects VALUES (null, 'la Revolución Francesa', 'war');
 INSERT INTO objects VALUES (null, 'la Revolución Mexicana', 'war');
 INSERT INTO objects VALUES (null, 'la independencia de México', 'war');
+INSERT INTO objects VALUES (null, 'la guerra civil española', 'war');
+INSERT INTO objects VALUES (null, 'la guerra de los pasteles', 'war');
 
 INSERT INTO objects VALUES (null, 'jungla', 'jungleM');
 INSERT INTO objects VALUES (null, 'selva tropical', 'jungleM');
@@ -3864,7 +3877,7 @@ INSERT INTO objects VALUES (null, 'planetas', 'phenomentwo');
 INSERT INTO objects VALUES (null, 'universos', 'phenomentwo');
 INSERT INTO objects VALUES (null, 'galaxias', 'phenomentwo');
 INSERT INTO objects VALUES (null, 'numeros primos', 'phenomentwo');
-INSERT INTO objects VALUES (null, 'parajodas', 'phenomentwo');
+INSERT INTO objects VALUES (null, 'paradojas', 'phenomentwo');
 INSERT INTO objects VALUES (null, 'penes', 'phenomentwo');
 INSERT INTO objects VALUES (null, 'Domingos', 'phenomentwo');
 INSERT INTO objects VALUES (null, 'años', 'phenomentwo');
@@ -4013,6 +4026,8 @@ INSERT INTO objects VALUES (null, 'Crimen y Castigo de Dostoievski', 'title');
 INSERT INTO objects VALUES (null, 'El Nombre de la Rosa', 'title');
 INSERT INTO objects VALUES (null, 'El Manifesto Comunista', 'title');
 INSERT INTO objects VALUES (null, '1984 de George Orwell', 'title');
+INSERT INTO objects VALUES (null, 'el Quiúbole con', 'title');
+INSERT INTO objects VALUES (null, 'Crimen y Castigo', 'title');
 
 /*OBRAS DE ARTE*/
 
@@ -4032,7 +4047,7 @@ INSERT INTO objects VALUES (null, 'una pintura de Lucian Freud', 'artM');
 INSERT INTO objects VALUES (null, 'un "fresco" de Fra Angelico', 'artH');
 INSERT INTO objects VALUES (null, 'un Caravaggio', 'artH');
 INSERT INTO objects VALUES (null, 'un Rembrandt', 'artH');
-INSERT INTO objects VALUES (null, '"La Adoración de los Reyes Magos de" Gentile da Fabriano','artM');
+INSERT INTO objects VALUES (null, '"La Adoración de los Reyes Magos" de Gentile da Fabriano','artM');
 INSERT INTO objects VALUES (null, 'la "Mona Lisa"', 'artM');
 INSERT INTO objects VALUES (null, '"La Noche estrellada" de Van Gogh', 'artM');
 INSERT INTO objects VALUES (null, '"La última cena" de da Vinci', 'artM');
@@ -4609,7 +4624,9 @@ INSERT INTO objects VALUES (null, 'los "Millenials"', 'concept');
 INSERT INTO objects VALUES (null, 'Airbnb', 'concept');
 INSERT INTO objects VALUES (null, 'Uber', 'concept');
 INSERT INTO objects VALUES (null, 'la fama de YouTube', 'concept');
+INSERT INTO objects VALUES (null, 'el invierno en Mar del Plata', 'concept');
 INSERT INTO objects VALUES (null, 'las personas que se llaman Ricardo', 'concept');
+INSERT INTO objects VALUES (null, 'la importancia de llamarse Ernesto', 'concept');
 INSERT INTO objects VALUES (null, 'la Revolución Francesa', 'concept');
 INSERT INTO objects VALUES (null, 'la inseminación artificial', 'concept');
 INSERT INTO objects VALUES (null, 'la eyaculación precoz', 'concept');
@@ -5121,3 +5138,23 @@ INSERT INTO objects VALUES (null, 'tinnitus', 'illtwo');
 INSERT INTO objects VALUES (null, 'disfunción eréctil', 'illtwo');
 INSERT INTO objects VALUES (null, 'diabetes', 'illtwo');
 INSERT INTO objects VALUES (null, 'acné', 'illtwo');
+
+INSERT INTO objects VALUES (null, 'un movimiento social', 'protest');
+INSERT INTO objects VALUES (null, 'una manifestación', 'protest');
+INSERT INTO objects VALUES (null, 'una protesta masiva', 'protest');
+INSERT INTO objects VALUES (null, 'una marcha masiva', 'protest');
+
+INSERT INTO objects VALUES (null, 'a', 'letter');
+INSERT INTO objects VALUES (null, 'b', 'letter');
+INSERT INTO objects VALUES (null, 'c', 'letter');
+INSERT INTO objects VALUES (null, 'd', 'letter');
+INSERT INTO objects VALUES (null, 'e', 'letter');
+INSERT INTO objects VALUES (null, 'f', 'letter');
+INSERT INTO objects VALUES (null, 'g', 'letter');
+INSERT INTO objects VALUES (null, 'h', 'letter');
+INSERT INTO objects VALUES (null, 'i', 'letter');
+INSERT INTO objects VALUES (null, 'j', 'letter');
+INSERT INTO objects VALUES (null, 'k', 'letter');
+INSERT INTO objects VALUES (null, 'm', 'letter');
+INSERT INTO objects VALUES (null, 'x', 'letter');
+INSERT INTO objects VALUES (null, 'z', 'letter');

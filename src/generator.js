@@ -106,8 +106,7 @@ function buildQuery(table, category, callback) {
 
 function getReplacement(query, callback) {
   executeQuery(query, (error, result) => {
-    if (error)
-      return callback(`Error querying for replacement: ${error}`, null);
+    if (error) return callback(`Error querying for replacement: ${error}`, null);
     let replacement = Object.values(result[0])[0];
     return callback(error, replacement);
   });
