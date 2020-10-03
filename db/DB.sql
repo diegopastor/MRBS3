@@ -890,6 +890,10 @@ INSERT INTO specials VALUES (null, 'Un $per-genH cambia de cuerpo con un $ob-bei
 INSERT INTO specials VALUES (null, 'Existe un mundo paralelo en el que', 'parallelUniverse');
 INSERT INTO specials VALUES (null, 'En una realidad alterna en la que', 'parallelUniverse');
 INSERT INTO specials VALUES (null, 'Hay un universo paralelo en el que', 'parallelUniverse');
+INSERT INTO specials VALUES (null, 'Se habla de una dimensión paralela en la que', 'parallelUniverse');
+INSERT INTO specials VALUES (null, 'Existe una dimensión paralela en la que', 'parallelUniverse');
+INSERT INTO specials VALUES (null, 'Existe una dimensión alterna en la que', 'parallelUniverse');
+INSERT INTO specials VALUES (null, 'Existe una dimensión alterna en la que', 'parallelUniverse');
 
 INSERT INTO specials VALUES (null, 'las semanas empiezan en $ob-weekdayNoMon y terminan en Lunes', 'minorDifference');
 INSERT INTO specials VALUES (null, 'el $ob-soccerteamH juega en tercera división', 'minorDifference');
@@ -909,6 +913,7 @@ INSERT INTO specials VALUES (null, '$ob-natTeamtwo ganó $ob-worldEvtwo $sp-wack
 INSERT INTO specials VALUES (null, '$ob-title nunca se escribió', 'minorDifference');
 
 INSERT INTO specials VALUES (null, 'pero los $ob-dulceP no existen', 'wackyTweak');
+INSERT INTO specials VALUES (null, 'pero el concepto de $ob-concept no existe', 'wackyTweak');
 
 INSERT INTO specials VALUES (null, 'tiene un $ob-extinctanimalH de mascota', 'hipsterst');
 INSERT INTO specials VALUES (null, 'tiene un $ob-animalH bicéfalo de mascota', 'hipsterst');
@@ -921,7 +926,10 @@ INSERT INTO specials VALUES (null, 'en la que Stan Lee hace un cameo', 'secualst
 INSERT INTO specials VALUES (null, 'en la que $per-politic hace un personaje', 'secualstory');
 INSERT INTO specials VALUES (null, 'en la que todos mueren', 'secualstory');
 INSERT INTO specials VALUES (null, 'en la que $per-musician hizo el soundtrack', 'secualstory');
+INSERT INTO specials VALUES (null, 'que tiene música de $per-musician', 'secualstory');
 INSERT INTO specials VALUES (null, 'que solamente ha visto un $per-rulerH', 'secualstory');
+INSERT INTO specials VALUES (null, 'que dura $ob-lifespan horas', 'secualstory');
+INSERT INTO specials VALUES (null, 'en la que actúa $per-memecelebritt', 'secualstory');
 
 INSERT INTO bases VALUES (null, 'Un $per-genH $ver-sneez. Durante ese $ad-quickt momento, $sp-whole como $sp-otherlife',0);
 
@@ -2570,6 +2578,9 @@ INSERT INTO people VALUES (null, 'Carlos Trejo', 'memecelebritt');
 INSERT INTO people VALUES (null, 'Lady Cien Pesos', 'memecelebritt');
 INSERT INTO people VALUES (null, 'Yorsh de Polanco', 'memecelebritt');
 INSERT INTO people VALUES (null, 'Luisito Comunica', 'memecelebritt');
+INSERT INTO people VALUES (null, 'Bárbara de Regil', 'memecelebritt');
+INSERT INTO people VALUES (null, 'el Chaparro Chuacheneger', 'memecelebritt');
+INSERT INTO people VALUES (null, 'Colibritany', 'memecelebritt');
 
 /* NEXOS FAMILIARES*/
 
@@ -3465,6 +3476,7 @@ INSERT INTO objects VALUES (null, 'iPhone 7s', 'thingH');
 INSERT INTO objects VALUES (null, 'Nokia 3310', 'thingH');
 INSERT INTO objects VALUES (null, 'algoritmo recursivo', 'thingH');
 INSERT INTO objects VALUES (null, 'inyección SQL', 'thingM');
+INSERT INTO objects VALUES (null, 'burofax', 'thingH');
 
 INSERT INTO objects VALUES (null, 'muñecas Barbie', 'thingP');
 INSERT INTO objects VALUES (null, 'Cajitas Felices', 'thingP');
@@ -4493,6 +4505,13 @@ INSERT INTO objects VALUES (null, 'El Señor de los Anillos', 'movieseries');
 INSERT INTO objects VALUES (null, 'Star Wars', 'movieseries');
 INSERT INTO objects VALUES (null, 'Indiana Jones', 'movieseries');
 INSERT INTO objects VALUES (null, 'Harry Potter', 'movieseries');
+INSERT INTO objects VALUES (null, 'James Bond', 'movieseries');
+INSERT INTO objects VALUES (null, 'Godzilla', 'movieseries');
+INSERT INTO objects VALUES (null, 'Star Trek', 'movieseries');
+INSERT INTO objects VALUES (null, 'Terminator', 'movieseries');
+INSERT INTO objects VALUES (null, 'Toy Story', 'movieseries');
+INSERT INTO objects VALUES (null, 'El Señor de los Anillos', 'movieseries');
+INSERT INTO objects VALUES (null, 'El Padrino', 'movieseries');
 
 /* LUGAR DESAGRADABLE */
 
