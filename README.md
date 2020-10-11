@@ -6,15 +6,20 @@
 
 ![Sentence Being Replaced](https://github.com/diegopastor/MRBS3/blob/master/assets/img/type.gif)
 
-## What is MRBS3 ?
+## Table of Contents
+
+- [What is MRBS3?](#What-is-MRBS3?)
+- [How to Contribute?](#How-to-Contribute?)
+    - [TL;DR](#TL;DR)
+    - [TL;DR](#TL;DR)
+
+## What is MRBS3?
 
 A collection of files that "automagically" generate and tweet a "Magic Realism" tweet in spanish every 4 hours. Inspired by [it's english version](https://twitter.com/MagicRealismBot). This time the files are published openly licensed by the MIT license. Furthermore, contributions are encouraged.
 
-## How to Contribute ?
+## How to Contribute?
 
 First, a brief explanation of how sentences are generated.
-
-### TL;DR
 
 We have a SQL database from which we obtain "bases". Bases are sentences that contain a set of keywords. Keywords are strings formed with a specific format that act as placeholders for other strings. A Node.js script takes a random base, fills it's placeholder keywords by querying the SQL database for replacements, and then tweets the freshly generated sentence!
 
@@ -56,10 +61,17 @@ For example:
 
 The base `$ob-sunn está $ver-burnverb en un $ob-garbagedumpH` is selected. Then we proceed to replace all the placeholder keywords with corresponding actual values. The first keyword to replace is `$ob-sunn` (we replace from left to right) so we look in the **Objects** table and select a random entry that contains the tag `sunn`. We get, for example, "El Sol" so we replace the keyword with the value. We now have: `El Sol está $ver-burnverb en un $ob-garbagedumpH` we then look in the **Verbs** table for a verb with the tag `burnverb`, replace the placeholder keyword and after that look in the **Objects** table again for an object with the tag `garbagedumpH`. We replace the `$ob-garbagedumpH` keyword with the freshly obtained filler and we are done! We just obtained the sentence: `El Sol está jugando golf en un circo` (The Sun is playing golf at a circus) ☀️🏌️🎪.
 
+1. `$ob-sunn está $ver-burnverb en un $ob-garbagedumpH`
+2. `El Sol está $ver-burnverb en un $ob-garbagedumpH`
+3. `El Sol está jugando golf en un $ob-garbagedumpH`
+4. `El Sol está jugando golf en un circo`
+
 Of course, the replacement for a keyword can itself contain more keywords to be replaced. This would allow for infinitely nested replacements and for your creativity to go wild while creating complex sentence structures that create the feeling of unique sentences every time.
 
 So, you can contribute by adding bases with their corresponding replacements, more replacements of any "table" and "tag" or anything you want.
 
 ## How to run your own instance of MRBS3 ?
+
+
 
 ### Project Structure
