@@ -1,8 +1,0 @@
-- [ ] Use a better logging tool
-	- [ ] Add time-to next tweet countdown
-	- [ ] Set verbose in log.debug mode
-- [ ] Add CD pipeline
-- [ ] Add spellcheck before tweet and try again if mistake found
-- [ ] Add tests
-- [ ] Rotate logs
-- [ ] Add .service and .sh files to execute as a unix service for automatically restarting
