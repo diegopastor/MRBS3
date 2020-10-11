@@ -6,10 +6,11 @@ const {executeQuery} = require('./sql');
 const KEYWORD_PREFIX = '$';
 const KEYWORD_DIVIDER = '-';
 const MAX_USED_BASES = 40;
-const GET_USED_BASES_QUERY = 'SELECT SUM(USED) FROM BASES;';
-const REFRESH_BASES_QUERY = 'UPDATE BASES SET USED = 0;';
+const GET_USED_BASES_QUERY = 'SELECT SUM(USED) FROM bases;';
+const REFRESH_BASES_QUERY = 'UPDATE bases SET USED = 0;';
+const SET_BASE_AS_USED_QUERY = (base) => `UPDATE BASES SET USED = 1 WHERE BASE = '${base}';`
 const GET_BASE_QUERY =
-  'SELECT BASE FROM BASES WHERE USED != 1 ORDER BY RAND() LIMIT 1;';
+  'SELECT BASE FROM bases WHERE USED != 1 ORDER BY RAND() LIMIT 1;';
 const TABLES = {
   sp: ['special', 'specials'],
   ob: ['object', 'objects'],
@@ -42,9 +43,7 @@ function getBase(callback) {
     executeQuery(GET_BASE_QUERY, (error, result) => {
       if (error) return callback(`Can't get base: ${error}`);
       let base = Object.values(result[0])[0];
-      executeQuery(
-        `UPDATE BASES SET USED = 1 WHERE BASE = '${base}';`,
-        error => {
+      executeQuery(SET_BASE_AS_USED_QUERY(base), error => {
           if (error) return callback(`Can't updated used bases: ${error}`);
           return callback(null, base);
         },
