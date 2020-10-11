@@ -18,6 +18,8 @@
 
 A collection of files that "automagically" generate and tweet a "Magic Realism" tweet in spanish every 4 hours. Inspired by [it's english version](https://twitter.com/MagicRealismBot). This time the files are published openly licensed by the MIT license. Furthermore, contributions are encouraged.
 
+Check out live version [here](https://twitter.com/botrealmagico).
+
 ## How to Contribute?
 
 First, a brief explanation of how sentences are generated.
@@ -48,7 +50,7 @@ The table id's point to SQL table names. There are a total of 6 tables in our SQ
 5. **People**: Contains strings classified as historical figures, occupations and things considered "people". (Identified with the `per` table id)
 6. **Adjectives**: Contains strings classified as adjectives. (Identified with the `ad` table id)
 
-And the tag's point to a "tag" property in each of the SQL tables schemas. Each tag is meant to be a string that represents a collection of similar things. Be it, similar objects, similar verbs, similar adjectives, etc.
+And the tags point to a "tag" property in each of the SQL tables schemas. Each tag is meant to be a string that represents a collection of similar things. Be it, similar objects, similar verbs, similar adjectives, etc.
 
 So, returning to the previously mentioned keywords:
 
@@ -73,7 +75,7 @@ So, you can contribute by adding bases with their corresponding replacements, mo
 
 ## How to run your own instance of MRBS3?
 
-Fist, clone the project: 
+First, clone the project: 
 
 ```
 git clone https://github.com/diegopastor/MRBS3.git
