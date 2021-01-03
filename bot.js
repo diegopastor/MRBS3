@@ -8,13 +8,13 @@ const RETRY_ATTEMPTS = 4;
 
 const startBot = () => {
   console.log('Starting Bot...');
-  setImmediate(tweet);
+  setImmediate(generateAndPostTweet);
   setInterval(() => {
-    tweet();
+    generateAndPostTweet();
   }, TWEET_TIME_INTERVAL);
 };
 
-const tweet = (attempts = 1) => {
+const generateAndPostTweet = (attempts = 1) => {
   if (attempts >= RETRY_ATTEMPTS) {
     return console.log('Max retries attempted...');
   }
@@ -22,13 +22,13 @@ const tweet = (attempts = 1) => {
   generateTweet((error, tweet) => {
     if (error) {
       console.log(`Error generating tweet on attempt ${attempts}: ${error}`);
-      return tweet(++attempts);
+      return generateAndPostTweet(++attempts);
     }
     console.log(`Generated tweet: ${tweet}`);
     postTweet(tweet, error => {
       if (error) {
         console.log(`Error posting tweet on attempt ${attempts}: ${error}`);
-        return tweet(++attempts);
+        return generateAndPostTweet(++attempts);
       }
       console.log(`Tweeted: ${tweet}`);
     });

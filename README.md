@@ -6,16 +6,19 @@
 
 ![Sentence Being Replaced](https://github.com/diegopastor/MRBS3/blob/master/assets/img/type.gif)
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## Table of Contents
 
 - [What is MRBS3?](#What-is-MRBS3?)
 - [How to Contribute?](#How-to-Contribute?)
-    - [TL;DR](#TL;DR)
-    - [TL;DR](#TL;DR)
+- [How to run your own instance of MRBS3?](#How-to-run-your-own-instance-of-MRBS3?)
 
 ## What is MRBS3?
 
 A collection of files that "automagically" generate and tweet a "Magic Realism" tweet in spanish every 4 hours. Inspired by [it's english version](https://twitter.com/MagicRealismBot). This time the files are published openly licensed by the MIT license. Furthermore, contributions are encouraged.
+
+Check out live version [here](https://twitter.com/botrealmagico).
 
 ## How to Contribute?
 
@@ -47,7 +50,7 @@ The table id's point to SQL table names. There are a total of 6 tables in our SQ
 5. **People**: Contains strings classified as historical figures, occupations and things considered "people". (Identified with the `per` table id)
 6. **Adjectives**: Contains strings classified as adjectives. (Identified with the `ad` table id)
 
-And the tag's point to a "tag" property in each of the SQL tables schemas. Each tag is meant to be a string that represents a collection of similar things. Be it, similar objects, similar verbs, similar adjectives, etc.
+And the tags point to a "tag" property in each of the SQL tables schemas. Each tag is meant to be a string that represents a collection of similar things. Be it, similar objects, similar verbs, similar adjectives, etc.
 
 So, returning to the previously mentioned keywords:
 
@@ -70,8 +73,43 @@ Of course, the replacement for a keyword can itself contain more keywords to be 
 
 So, you can contribute by adding bases with their corresponding replacements, more replacements of any "table" and "tag" or anything you want.
 
-## How to run your own instance of MRBS3 ?
+## How to run your own instance of MRBS3?
 
+First, clone the project: 
 
+```
+git clone https://github.com/diegopastor/MRBS3.git
+```
 
-### Project Structure
+You need:
+
+- Node.js installed ( I use version **v12.18.4**)
+- MariaDB installed ( i use version **10.3.23-MariaDB-0+deb10u1 Raspbian 10**, Yes, [live version](https://twitter.com/botrealmagico)) runs on a Raspberry Pi.)
+
+You need a Twitter account and, in order to perform actions on behalf of an account (tweet), you need user access tokens. Information on how to create tokens can be found [here](https://developer.twitter.com/en/docs). You can also skip the tweeting part and just use this to generate sentences.
+
+Well, once you've got the Twitter access tokens put them in a file at `/config/twitter.js`. The file should look something like this:
+
+```JavaScript
+module.exports = {
+    consumer_key: '<your_consumer_key>',
+    consumer_secret: '<your_consumer_secret>',
+    access_token: '<your_access_token>',
+    access_token_secret: '<your_acces_token_secret>',
+}
+```
+
+- Create a `/config/db.js` file that contains:
+
+```JavaScript
+module.exports = {
+    host: '<your_db_host>',
+    user: '<your_db_user>',
+    password: '<your_db_password>',
+    database: 'MRBS3',
+};
+```
+
+Now you need to create the database and populate it. You can do it by running `source /MRBS3/db/DB.sql` inside the MariaDB cli client.
+
+Now you can run the `bot.js` script and start generating and tweeting sentences!
