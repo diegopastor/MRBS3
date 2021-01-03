@@ -1419,7 +1419,7 @@ INSERT INTO specials VALUES (null, 'posee una habilidad única', 'sixth');
 INSERT INTO specials VALUES (null, 'tiene un raro don', 'sixth');
 
 INSERT INTO specials VALUES (null, 'Se ahoga', 'drown');
-INSERT INTO specials VALUES (null, 'Nunca naide lo vuelve a ver', 'drown');
+INSERT INTO specials VALUES (null, 'Nunca nadie lo vuelve a ver', 'drown');
 INSERT INTO specials VALUES (null, 'Pasan los años y nadie lo extraña', 'drown');
 INSERT INTO specials VALUES (null, 'Nadie se da cuenta', 'drown');
 INSERT INTO specials VALUES (null, 'Un $ob-animalH observa el hecho', 'drown');
